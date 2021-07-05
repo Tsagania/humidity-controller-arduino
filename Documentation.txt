@@ -1,31 +1,33 @@
-ΓΙΑ ΤΗ ΒΑΣΗ ΔΕΔΟΜΕΝΩΝ
-	Ανοίγουμε το XAMPP και ενεργοποιούμε Apache και MySQL
-	Πατάμε Admin στο MySQL
-	Κάνουμε import το SQL αρχείο
+DATABASE
+	Start XAMPP and turn on Apache and MySQL
+	Click Admin on MySQL
+	Import the sql file named 127_0_0_1.sql (https://github.com/Tsagania/humidity-controller-arduino/blob/main/127_0_0_1.sql)
 
 
-ΓΙΑ ΤΟ ARDUINO SKETCH 
-	Απλά ανοίγουμε το περιβάλλον του arduino και κάνουμε Open File
-        Αν έχεις κάνει το κύκλωμα με Arduino, πρέπει να ανεβάσεις (Ανέβασμα) τον κώδικα στην πλακέτα
+ARDUINO SCETCH
+	Start the arduino environment and click open file
+	You need to have the circuit ready and load the file sketch_mar29a.ino (https://github.com/Tsagania/humidity-controller-arduino/blob/main/sketch_mar29a.ino)
+	
+	
+PYTHON CODE
+	If you downloaded python to your computer:
+		From Start search for CMD and copy paste one by one the following lines(16 & 17) to install two libraries
+	If you use python from an environment like Anaconda 
+		Search in the start menu for Anaconda Prompt (or your program's prompt) and copy paste one by one the following lines(16 & 17) to install two libraries
+	pip install mysql-connector-python
+	pip install pyserial
+	
+	In line 19 of the myarduino.py (https://github.com/Tsagania/humidity-controller-arduino/blob/main/myarduino.py) there's this code: ser = serial.Serial('NAME PORT', 		9600), the first parameter is your activated arduino PORT. Your arduino system must be turned on. You can find the PORT that the system uses by opening TOOLS (from 		arduino sketch) and look up for COM* (where *= 0 or 1 or 2 or... 9)
+	
+	Now you can run the python program
 
 
-ΓΙΑ ΤΟΝ ΚΩΔΙΚΑ PYTHON
-	Αν έχουμε εγκαταστήσει την Python στον υπολογιστή:
-		Ανοίγουμε το CMD απο το start menu και κάνουμε copy paste μια μια τις εντολές για να κατεβάσουμε δύο βιβλιοθήκες
-	Αν δουλεύουμε από το Anaconda και το spyder: 
-		Ανοίγουμε το Anaconda Promp από την έναρξη και κάνουμε copy paste μια μια τις εντολές για να κατεβάσουμε δύο βιβλιοθήκες
-	ΕΝΤΟΛΕΣ	
-		pip install mysql-connector-python
-		pip install pyserial
-	Στη γραμμή 19:  ser = serial.Serial('ΟΝΟΜΑ PORT', 9600) πρέπει στη πρώτη παράμετρο να βάλω το ενεργό PORT του arduino. Το σύστημα πρέπει να είναι ενεργό και το port αναγράφεται στο TOOLS ως COM*  όπου *= 0 ή 1 ή 2 ή 3... κοκ.
-        Ανοίγεις ένα περιβάλλον της επιλογής σου που τρέχει κώδικας Python, και τρέχεις το πρόγραμμα. Έτσι ανεβαίνουν τα δεδομένα στη βάση δεδομένων.
-
-
-ΓΙΑ ΤΟΝ ΚΩΔΙΚΑ PHP
-        Έχεις ανοιχτή τη βάση δεδομένων(Ανοίγουμε το XAMPP και ενεργοποιούμε Apache και MySQL)
-        Φορτώνεις τον φάκελο ARDUINO_PHP στον φάκελο htdocs του xampp. 
-        Μπαίνεις σε έναν browser και γράφεις localhost/ARDUINO_PHP/ , πατάς ENTER και voilà!!
-
-REPORT-ΠΕΡΙΓΡΑΦΗ ΕΡΓΑΣΙΑΣ
-        Στο αρχείο ΠΕΡΙΓΡΑΦΗ ΕΡΓΑΣΙΑΣ.docx περιλαμβάνεται η περιγραφή του κυκλώματος-συστήματος.
+PHP CODE
+	While database is running (line 2 in this document 'turn on Apache and MySQL')
+	Copy the ARDUINO_PHP folder to XAMPP folder 'htdocs' (you can find the folder by clicking the Explorer button)
+	Open a browser and search localhost/ARDUINO_PHP/index.php, hit ENTER and VOILA!
+	
+	
+_WILL BE ADDED SOON ASSIGMENT REPORT_
+	ASSIGMENT_DESC.decx includes the circuit's description and how to create it
         
