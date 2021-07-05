@@ -1,6 +1,6 @@
 # humidity-controller-arduino
 #This system was created for University Assigment&lt;br /> 
-
+#NOT FULLY TRANSLATED, soon it will all be translated to English
 ---------------------Short Description-------------------------<br />
 The system detects the soil humidity every hour. <br />
 The system sends the value to mySQL database to store it. <br />
