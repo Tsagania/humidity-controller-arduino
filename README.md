@@ -9,4 +9,4 @@ A site (php) was created to show the data from the database.<br />
 
 
 ---------------------Long Description-------------------------<br />
-Meh<br />
+Meh, go to https://github.com/Tsagania/humidity-controller-arduino/blob/main/Documentation.txt<br />
