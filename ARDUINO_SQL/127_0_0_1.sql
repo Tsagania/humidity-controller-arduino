@@ -2,10 +2,6 @@
 -- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
--- Εξυπηρετητής: 127.0.0.1
--- Χρόνος δημιουργίας: 30 Απρ 2021 στις 07:14:17
--- Έκδοση διακομιστή: 10.4.18-MariaDB
--- Έκδοση PHP: 8.0.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +14,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Βάση δεδομένων: `myarduinodb`
+-- Database: `myarduinodb`
 --
 CREATE DATABASE IF NOT EXISTS `myarduinodb` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 USE `myarduinodb`;
@@ -26,7 +22,7 @@ USE `myarduinodb`;
 -- --------------------------------------------------------
 
 --
--- Δομή πίνακα για τον πίνακα `arduino`
+-- Table stucture for table `arduino`
 --
 
 CREATE TABLE `arduino` (
@@ -35,7 +31,7 @@ CREATE TABLE `arduino` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Άδειασμα δεδομένων του πίνακα `arduino`
+-- Load sent data `arduino`
 --
 
 INSERT INTO `arduino` (`value`, `time1`) VALUES
@@ -53,7 +49,7 @@ INSERT INTO `arduino` (`value`, `time1`) VALUES
 -- --------------------------------------------------------
 
 --
--- Δομή πίνακα για τον πίνακα `average`
+-- Table structure for table `average`
 --
 
 CREATE TABLE `average` (
@@ -62,7 +58,7 @@ CREATE TABLE `average` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Άδειασμα δεδομένων του πίνακα `average`
+-- Load sent data `average`
 --
 
 INSERT INTO `average` (`average`, `day`) VALUES
