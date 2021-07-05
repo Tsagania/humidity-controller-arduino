@@ -58,7 +58,7 @@ CREATE TABLE `average` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Άδειασμα δεδομένων του πίνακα `average`
+-- Load sent data `average`
 --
 
 INSERT INTO `average` (`average`, `day`) VALUES
