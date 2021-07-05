@@ -1,5 +1,5 @@
 # humidity-controller-arduino
-#This system was created for University Assigment&lt;br /> 
+#This system was created for University Assigment<br />
 NOT FULLY TRANSLATED, soon it will all be translated to English<br />
 ---------------------Short Description-------------------------<br />
 The system detects the soil humidity every hour. <br />
