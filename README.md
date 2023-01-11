@@ -3,8 +3,8 @@
 NOT FULLY TRANSLATED, soon it will all be translated to English<br />
 ---------------------Short Description-------------------------<br />
 The system detects the soil humidity every hour. <br />
-The system sends the value to mySQL database to store it. <br />
-Every 24hours the server calculates the average and stores it. <br />
+The system sends the humidity values to mySQL database to store it. <br />
+Every 24hours the server calculates the average humidity and stores it. <br />
 A site (php) was created to show the data from the database.<br />
 
 
